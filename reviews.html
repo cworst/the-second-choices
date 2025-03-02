@@ -14,24 +14,16 @@
         font-size:1em;
         gap:10px;
 }
-.sider{
+.sidel{
         grid-column-start:1;
-        grid-column-end:4;
+        grid-column-end:6;
         grid-row-start:3;
         grid-row-end:8;
         background-color:#f6a9ce;
         border:2px solid #691a40;
 }
-.main{
-	grid-column-start:4;
-	grid-column-end:8;
-	grid-row-start:3;
-	grid-row-end:8;
-	background-color:#f6a9ce;
-        border:2px solid #691a40;
-}
-.sidel{
-	grid-column-start:8;
+.sider{
+	grid-column-start:6;
 	grid-column-end:11;
 	grid-row-start:3;
 	grid-row-end:8;
@@ -45,6 +37,7 @@
         grid-row-end:3;
         background-color:#f6a9ce;
         border:2px solid #691a40;
+	font-size:4em;
 }
 .footer{
 	grid-column-start:1;
@@ -59,10 +52,27 @@
 </head>
 <body>
 <div class="grid">
-<div class="header">reviews</div>
-<div class="sidel">hi</div>
-<div class="main">ho</div>
-<div class="sider">gyatt</div>
+<div class="header">Our Reviews</div>
+<div class="sidel">
+	<img src="images/hair.png" alt="hair cutting tools" width="500 height="270">
+</div>
+<div class="sider">
+	<h2>Reviews By Clients</h2>
+<ul>
+	<li>Great service</li>
+	<li>love my hair</li>
+	<li>The students are very well taught!</li>
+	<li>affordable prices with amazing results</li>
+</ul>
+<br>
+<form action="https://httpbin.org/post" method="POST">
+	<label for="feedback">Got feedback or a review?</label>
+	<textarea id="feedback" name="feedback" rows="2" cols="10" placeholder="review/feedback">review/feedback</textarea>
+	<input type="reset" value="reset">
+</form>
+
+
+</div>
 <div class="footer">fuuo</div>
 
 

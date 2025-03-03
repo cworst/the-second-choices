@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+<title>Cosmetology reviws</title>
+<script src="js/init.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<style>
+.grid{
+        display:grid;
+        grid-template-rows:repeat(10,1fr);
+        grid-template-columns:repeat(10,1fr);
+        height:80vh;
+        text-align:center;
+        font-size:1em;
+        gap:10px;
+}
+.sidel{
+        grid-column-start:1;
+        grid-column-end:6;
+        grid-row-start:3;
+        grid-row-end:8;
+        background-color:#f6a9ce;
+        border:2px solid #691a40;
+}
+.sider{
+        grid-column-start:6;
+        grid-column-end:11;
+        grid-row-start:3;
+        grid-row-end:8;
+        background-color:#f6a9ce;
+        border:2px solid #691a40;
+}
+.header{
+        grid-column-start:1;
+        grid-column-end:11;
+        grid-row-start:1;
+        grid-row-end:3;
+        background-color:#f6a9ce;
+        border:2px solid #691a40;
+        font-size:4em;
+}
+.footer{
+        grid-column-start:1;
+        grid-column-end:11;
+ grid-row-start:8;
+        grid-row-end:10;
+        background-color:#f6a9ce;
+        border:2px solid #691a40;
+}
+.image{
+        object-fit:cover;
+}
+
+</style>
+</head>
+<body>
+<div class="grid">
+<div class="header">Our services:</div>
+<div class="sidel">
+
+        <div class="image"><img src="images/Salon.png" alt="Salon" style="width:100%; max-height:100%"></div>
+</div>
+<div class="sider">
+
+<h2>Reviews By Clients</h2>
+<ul>
+        <li>Manicures/Pedicures</li>
+        <li>Hair cuts</li>
+        <li>Facials</li>
+        <li>Acrylics (limited availability)</li>
+</ul>
+<br>
+<form action="https://httpbin.org/post" method="POST">
+        <label for="feedback">Got any questions?</label>
+        <textarea id="feedback" name="questions" rows="2" cols="20" placeholder="questions?">questions</textarea>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+</form>
+
+
+</div>
+<div class="footer">fuuo</div>
+</div>
+</body>
+</html>
+
+

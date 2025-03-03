@@ -5,30 +5,121 @@
 <script src="js/init.js"></script>
 </head>
 <style>
-.p {
-        background: #691a40; 
+.grid{
+        display:grid;
+        grid-template-rows:repeat(10,1fr);
+        grid-template-columns:repeat(10,1fr);
+        height:80vh;
+        text-align:center;
+        font-size:1em;
+        gap:10px;
+}
+.sider{
+        grid-column-start:1;
+        grid-column-end:4;
+        grid-row-start:3;
+        grid-row-end:8;
+        background-color:#f6a9ce;
+        border:2px solid #691a40;
+.main{
+        grid-column-start:4;
+        grid-column-end:8;
+        grid-row-start:3;
+        grid-row-end:8;
+        background-color:#f6a9ce;
+        border:2px solid #691a40;
+}
+.sidel{
+        grid-column-start:8;
+        grid-column-end:11;
+        grid-row-start:3;
+        grid-row-end:8;
+        background-color:#f6a9ce;
+        border:2px solid #691a40;
+}
+.header{
+        grid-column-start:1;
+        grid-column-end:11;
+        grid-row-start:1;
+        grid-row-end:3;
+        background-color:#f6a9ce;
+        border:2px solid #691a40;
+         font-size: 4em;
+}
+.footer{
+        grid-column-start:1;
+        grid-column-end:11;
+        grid-row-start:8;
+        grid-row-end:10;
+        background-color:#f6a9ce;
+        border:2px solid #691a40;
 }
 
-.second-color {
-        background: #9e3668;
+.grid2{
+        display:grid;
+        grid-template-rows:repeat(1,1fr);
+        grid-template-columns:repeat(12,1fr);
+        height:14vh;
+        text-align:center;
+        font-size:2em;
+        gap:5px;
 }
 
-.third-color {
-        background: #f6a9ce;
+.block1{
+        grid-column-start:1;
+        grid-column-end:3;
+        grid-row-start:1;
+        grid-row-end:1;
+        background-color:#fde3f0;
+        border:2px solid #691a40;
+}
+.block2{
+        grid-column-start:3;
+        grid-column-end:5;
+ grid-row-start:1;
+        grid-row-end:1;
+        background-color:#fde3f0;
+        border:2px solid #691a40;
+}
+.block3{
+        grid-column-start:5;
+        grid-column-end:7;
+        grid-row-start:1;
+        grid-row-end:1;
+        background-color:#fde3f0;
+        border:2px solid #691a40;
+}
+.block4{
+        grid-column-start:7;
+        grid-column-end:9;
+        grid-row-start:1;
+        grid-row-end:1;
+}
+.block5{
+        grid-column-start:9;
+        grid-column-end:11;
+        grid-row-start:1;
+        grid-row-end:1;
+        background-color:#fde3f0;
+        border:2px solid #691a40;
+}
+.block6{
+        grid-column-start:11;
+        grid-column-end:13;
+        grid-row-start:1;
+        grid-row-end:1;
+        background-color:#fde3f0;
+        border:2px solid #691a40;
 }
 
-body {
-        background: #fde3f0;
-}
 </style>                                  
 <body>
-<h1>SERVICES:</h1>
-<p> Our services page!</p>
-<h2>Our address:</h2>
+<div class="grid">
+<div class="header">ACC Cosmetology services</div>
+<h1>Our address:</h1>
 <p>816 S WALTER REED DR, ARLINGTON VA 22204</p>
-<h3>Our services:</h3>
+<h2>Our services:</h2>
 <p>Our services include Mani/Pedis, acrylic nails, haircuts, facials, Manicures,and Pedicures.</p>
-<image>img src="images/Salon.png" alt="Salon" width="400" height="245"></image>
 <form action="forms.html" method="POST">
 <fieldset>
   <legend>What's your request?(Mani/pedi, hair cut, etc)</legend>

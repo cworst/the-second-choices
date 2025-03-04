@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 .p { 
 	background: #691a40; 
 }
@@ -10,7 +11,9 @@
 	background: #f6a9ce; 
 }
 
-body { 
+h1, h2, h3 { 
+	font-family: "Lobster", sans-serif;
+	font-weight: 100;
 	background: #fde3f0; 
 }
 

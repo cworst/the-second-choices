@@ -16,7 +16,18 @@ h1, h2, h3, h4, h5 {
 	font-weight: 100;
 	background: #fde3f0; 
 }
-
+th, td, table {
+	border: 2px solid;
+	border-collapse: collapse;
+	font-family: "Times New Roman", sans-serif;
+	text-align: center;
+	font-size: 60px;
+}
+a{
+	font-family: "Times New Roman", sans-serif;
+        text-align: center;
+        font-size: 50px;
+}
 .grid{
         display:grid;
         grid-template-rows:repeat(10,1fr);

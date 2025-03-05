@@ -28,7 +28,12 @@ h3, h4, h5 {
 	background: #fde3f0; 
 	font-size: 200%
 }
-p {
+ul, li {
+        font-family: "Times New Roman", sans-serif;
+        font-size: 120%;
+	font-weight: bold;
+}
+p, input {
 	font-family: "Times New Roman", sans-serif;
 	font-size: 180%;
 }

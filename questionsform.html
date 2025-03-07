@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
         <head>
-<title>Cosmetology services</title>
+<title>Cosmetology reviws</title>
 <script src="js/init.js"></script>
 <link rel="stylesheet" type="text/css" href="styles.css">
 <style>
@@ -9,8 +9,9 @@
         display:grid;
         grid-template-rows:repeat(10,1fr);
         grid-template-columns:repeat(10,1fr);
-        height:85vh;
+        height:80vh;
         text-align:center;
+        font-size:1em;
         gap:10px;
 }
 .sidel{
@@ -36,11 +37,12 @@
         grid-row-end:3;
         background-color:#f6a9ce;
         border:2px solid #691a40;
+        font-size:4em;
 }
 .footer{
-        grid-column-start:1;
+ grid-column-start:1;
         grid-column-end:11;
-	grid-row-start:8;
+ grid-row-start:8;
         grid-row-end:10;
         background-color:#f6a9ce;
         border:2px solid #691a40;
@@ -53,23 +55,23 @@
 </head>
 <body>
 <div class="grid">
-	<div class="header"><h1>Questions?</h1></div>
+<div class="header">Common questions:</div>
 <div class="sidel">
 
-        <div class="image"><img src="images/Salon.png" alt="Salon" style="width:50%; max-height:50%"></div>
+        <div class="image"><img src="images/Help icon.png" alt="Questions" style="width:50%; max-height:50%"></div>
 </div>
 <div class="sider">
 
-<h2>Our services:</h2>
+<h2>Some common questions:</h2>
 <ul>
-        <li>Manicure/Pedicure</li>
-        <li>Facials</li>
-        <li>Hair cuts</li>
-        <li>Acrylic nails (Limited availability)</li>
+        <li>Can I get anything done without reservation?</li>
+        <li>Are acrylic nails more?</li>
+        <li>Do you have walk-ins?</li>
+        <li>How expensive are services?</li>
 </ul>
 <br>
 <form action="https://httpbin.org/post" method="POST">
-        <label for="feedback">Questions?</label>
+        <label for="feedback">Got any questions?</label>
         <textarea id="feedback" name="questions" rows="2" cols="20" placeholder="questions?">questions</textarea>
         <input type="reset" value="reset">
         <input type="submit" value="submit">
@@ -77,22 +79,4 @@
 
 
 </div>
-<div class="footer">
-<div class="grid2">
-<div class="block1"><a href="index.html">Home</a></div>
-<div class="block2"><a href="reviews.html">Our reviews</a></div>
-<div class="block3"><a href="time.html">Our address/services</a></div>
-<div class="block4"><a href="Reservations.html">Make a reservation</a></div>
-<div class="block5"><a href="times.html">Our events and times</a></div>
-<div class="block6"><a href="Services.html">our services</a></div>
-</div>
-</div>
-
-</div>
-</body>
-</html>
-
-</body>
-</html>
-
 
